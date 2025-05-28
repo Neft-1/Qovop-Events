@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'manrope', sans-serif;
+    background-color: white;
+}
+
+/* HEADER */
+header {
+    flex-shrink: 0;
+    transition: all 0.6s ease-in-out;
+    padding-bottom: 30px;
+}
+
+.headcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    font-weight: 500;
+}
+
+.logo {
+    width: auto;
+    height: 65vh;
+    transition: all 0.6s ease-in-out;
+    object-fit: cover;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    transition: all 0.6s ease;
+    opacity: 1;
+}
+
+.fleur {
+    width: 40px;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+}
+
+nav {
+    width: 100%;
+}
+
+.phonenumber, .mailadress {
+    display: flex;
+    flex: row;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4em;
+    gap: 5px;
+}
+
+.phoneplusmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MENU BUTTONS */
+.menu-item {
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background: transparent;
+    color: #000;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-item:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.menu-item.active-button {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* MAIN = ZONE SCROLLABLE */
+main {
+    flex-grow: 1;
+    overflow-y: auto; /* seule zone scrollable */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+/* CONTENU */
+
+main h2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.5em;
+    padding-top: 15px;
+}
+main h3 {
+    font-size: 1.3em;
+}
+
+main img {
+    border-radius: 6px;
+}
+
+.SubsectionTextArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutUs2 .SubsectionTextArea {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.AboutUs2 .SubsectionTextArea .subsection {
+    width: 40%;
+}
+
+.AboutUs2 .subsection {
+    padding-right: 20px;
+}
+
+.subsectiontitle {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.subsectiontitle .fleur {
+    width: 35px;
+    height: 35px;
+}
+
+.subsection {
+    height: 50%;
+}
+
+.AboutUs2::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 4px;
+    background-color: red;
+    margin: 0px auto 0px auto;
+}
+
+.AboutUs1, .AboutUs2 {
+    padding-top: 40px;
+}
+
+.QovopAboutUs, .QovopArnaud {
+    display: flex;
+    flex-direction: row;
+}
+
+.QovopAboutUsText img {
+    padding-right: 10px;
+}
+
+.QovopAboutUs img {
+    max-width: 25%;
+    padding-left: 10px;
+}
+
+.AboutUs2 .QovopAboutUs {
+    justify-content: space-between;
+}
+
+.AboutUs2 .QovopAboutUs .subsection {
+    width: 33%;
+}
+
+.AboutUs2 .AboutUsEnd {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.AboutUs2 ul {
+    margin-left: 1em;
+}
+
+.list1 {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list1 li {
+    margin-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.list1 .emoji {
+    margin-right: 0.5em;
+    font-size: 1em;
+    line-height: 0.4;
+}
+
+.subsection img {
+    max-width: 25%;
+}
+
+.QovopArnaud {
+    display: flex;
+    flex-direction: column;
+}
+
+.QovopArnaud .subsectiontitle {
+    padding-bottom: 10px;
+}
+
+.QovopArnaud .subsection {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.QovopArnaud .subsection2 {
+    padding-top: 30px;
+} 
+
+.QovopArnaud .subsection3 {
+    display: flex;
+    flex-direction: column;
+}  
+
+.QovopArnaud .subsection2 .SubsectionTextArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.QovopArnaud .subsection2 .SubsectionTextArea .text {
+    width: 40%;
+}
+
+.QovopArnaud .SubsectionTextArea {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    width: 70%;
+}
+
+.QovopArnaud .SubsectionTextArea .text {
+    height: 50%;
+}
+
+#ArnaudTitle {
+    padding-top: 40px;
+}
+
+.QovopArnaud .subsection .QovopAboutUs .SubsectionTextArea .subsection3 {
+    height: 50%;
+}
+
+/* HEADER FIXE LORS D'ACTIVATION */
+body.active header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 10;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+body.active .headcontainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 120px;
+}
+
+body.active .logo {
+    width: 20%;
+    object-fit: contain;
+}
+
+body.active h1 {
+    opacity: 0;
+    transform: translateY(-20px);
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body.active #menu {
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+body.active main {
+    padding-top: 140px; /* espace sous le header fixé */
+}
+
+/* CONTENU AVEC FONDU */
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
