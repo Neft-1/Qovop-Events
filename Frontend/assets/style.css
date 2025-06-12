@@ -44,6 +44,7 @@ h1 {
     padding: 20px 0;
     transition: all 0.6s ease;
     opacity: 1;
+    font-family: 'Impact', sans-serif;
 }
 
 .fleur {
@@ -53,7 +54,7 @@ h1 {
 #menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     transition: all 0.6s ease-in-out;
 }
@@ -90,7 +91,7 @@ nav {
     background: transparent;
     color: #000;
     font-family: 'Anton', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -117,8 +118,8 @@ nav {
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -134,18 +135,18 @@ main {
     overflow-y: auto; /* seule zone scrollable */
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 /* CONTENU */
 
 main h2 {
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 2.5em;
+    font-family: 'Impact', sans-serif;
+    font-size: 2.8em;
     padding-top: 15px;
 }
 main h3 {
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 main img {
@@ -163,6 +164,10 @@ main img {
     width: 100%;
 }
 
+.AboutUs2 .QovopAboutUs {
+    padding-bottom: 45px;
+}
+
 .AboutUs2 .SubsectionTextArea .subsection {
     width: 40%;
 }
@@ -175,18 +180,20 @@ main img {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    height: fit-content;
+    padding: 25px 0 15px 0;
 }
 
 .subsectiontitle .fleur {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .subsection {
     height: 50%;
 }
 
-.AboutUs2::after {
+.AboutUs2::after, .redline::after {
     content: "";
     display: block;
     width: 75%;
@@ -210,7 +217,13 @@ main img {
 
 .QovopAboutUs img {
     max-width: 25%;
+    max-height: 700px;
     padding-left: 10px;
+}
+
+#francemap {
+    max-height: none;
+    max-width: 40%;
 }
 
 .AboutUs2 .QovopAboutUs {
@@ -221,7 +234,7 @@ main img {
     width: 33%;
 }
 
-.AboutUs2 .AboutUsEnd {
+.endtitle {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -244,7 +257,6 @@ main img {
 
 .list1 .emoji {
     margin-right: 0.5em;
-    font-size: 1em;
     line-height: 0.4;
 }
 
@@ -257,10 +269,6 @@ main img {
     flex-direction: column;
 }
 
-.QovopArnaud .subsectiontitle {
-    padding-bottom: 10px;
-}
-
 .QovopArnaud .subsection {
     display: flex;
     flex-direction: row;
@@ -271,7 +279,7 @@ main img {
     padding-top: 30px;
 } 
 
-.QovopArnaud .subsection3 {
+.QovopArnaud .subsection4 {
     display: flex;
     flex-direction: column;
 }  
@@ -279,8 +287,8 @@ main img {
 .QovopArnaud .subsection2 .SubsectionTextArea {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .QovopArnaud .subsection2 .SubsectionTextArea .text {
@@ -302,8 +310,94 @@ main img {
     padding-top: 40px;
 }
 
-.QovopArnaud .subsection .QovopAboutUs .SubsectionTextArea .subsection3 {
+.QovopArnaud .subsection .QovopAboutUs .SubsectionTextArea {
     height: 50%;
+}
+
+.SubsectionTextArea1 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.subsection4 {
+    padding: 0 15px 25px 15px;
+}
+
+#BusinessEvent h2 {
+    padding-bottom: 10px;
+}
+
+#BusinessEvent .SubsectionTextArea {
+    width: 95%;
+}
+
+#TeamBuilding h2 {
+    padding-bottom: 10px;
+}
+
+.TBIdeas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.TBIdea {
+    width: 45%;
+}
+
+.TBIdea h4 {
+    padding-bottom: 10px;
+}
+
+.SubsectionTextArea2 {
+    padding-top: 15px;
+}
+
+.ateliers1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.ateliers1 .SubsectionTextArea2{
+    flex: 0 0 60%;
+}
+
+.atelierimages {
+   flex: 0 0 40%;
+}
+
+.ateliers1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-right: 30px;
+    max-height: 500px;
+}
+
+.ateliers2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.ateliers2 .SubsectionTextArea2{
+    flex: 0 0 60%;
+}
+
+.atelierimages {
+   flex: 0 0 40%;
+}
+
+.ateliers2 img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    padding-left: 30px;
 }
 
 /* HEADER FIXE LORS D'ACTIVATION */
@@ -341,9 +435,19 @@ body.active h1 {
     overflow: hidden;
 }
 
+body.active nav {
+    width: 66%;
+}
+
 body.active #menu {
     justify-content: flex-end;
     flex-grow: 1;
+}
+
+
+body.active .menu-item {
+    max-width: 18%;
+    height: auto;
 }
 
 body.active main {
